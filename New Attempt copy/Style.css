@@ -1,0 +1,719 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,400;0,500;0,600;0,700;1,900&family=Ubuntu:wght@400;500;700&display=swap');
+
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: 0;
+    text-decoration: none;
+}
+html{
+    scroll-behavior: smooth;
+}
+.max-width{
+    max-width: 1300px;
+    padding: 0 80px;
+    margin: auto;
+}
+/*  Navbar styling */
+
+.scroll-up-btn{
+    position: fixed;
+    height: 45px;
+    width: 42px;
+    background: rgb(251, 255, 19);
+    right: 30px;
+    bottom: 10px;
+    text-align: center;
+    line-height: 45px;
+    color: black;
+    z-index: 9999;
+    font-size: 30px;
+    border-radius: 6px;
+    border: 2px solid black;
+    cursor: pointer;
+    pointer-events: none;
+    opacity: 0;
+    transition: scroll 0.2s ease;
+}
+
+.scroll-up-btn.show{
+    bottom: 30px;
+    opacity: 1;
+    pointer-events: auto;
+
+}
+
+.navbar{
+    position: fixed;
+    width: 100%;
+    padding: 15px 0px;
+    font-family: 'Ubuntu', 'sans-serif';
+    transition: all 0.5s ease;
+    z-index: 999;
+
+}
+.navbar.sticky{
+    background: rgb(0, 34, 85);
+    padding: 20px 0px;
+    border: 2px solid black;
+    
+
+    
+}
+.navbar .max-width{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.navbar .menu li{
+    list-style: none;
+    display: inline-block;
+}
+
+.navbar .logo a{
+    color: #fff;
+    font-size: 35px;
+    font-weight: 400;
+}
+.navbar .logo a span{
+    color: yellow;
+    font-weight: 600;
+}
+.navbar .menu li a{
+    display: block;
+    color:#fff;
+    font-size: 18px;
+    font-weight: 500;
+    margin-left: 25px;
+    transition: color 0.5s ease;
+
+}   
+.navbar .menu li a:hover{
+    color: yellow;
+}
+
+.navbar.sticky .menu li a:hover{
+    color: white;
+}
+
+
+
+/* home section styling */
+.home{
+    display: flex;
+    background: url("background1.jpg") no-repeat center;
+    height: 90vh;
+
+}
+
+/* attempting to grey scale the picture background */
+
+
+.home {
+    display: flex;
+    width: 100%;
+    height: 100vh;
+    color: white;
+    min-height: 500px;
+    font-family: 'Ubuntu', 'sans-serif';
+
+    background-image: -webkit-linear-gradient(top, 
+        rgba(0,0,0,0.9) 0%, 
+        rgba(0,0,0,0) 20%,
+        rgba(0,0,0,0) 80%,
+        rgba(0,0,0,0.9) 100%
+      ),
+      -webkit-linear-gradient(left, 
+        rgba(0,0,0,0.9) 0%, 
+        rgba(0,0,0,0) 20%,
+        rgba(0,0,0,0) 80%,
+        rgba(0,0,0,0.9) 100%
+      ),
+      url("background1.jpg");
+  
+    background-image: -moz-linear-gradient(top, 
+        rgba(0,0,0,0.9) 0%, 
+        rgba(0,0,0,0) 20%,
+        rgba(0,0,0,0) 80%,
+        rgba(0,0,0,0.9) 100%
+      ),
+      -moz-linear-gradient(left, 
+        rgba(0,0,0,0.9) 0%, 
+        rgba(0,0,0,0) 20%,
+        rgba(0,0,0,0) 80%,
+        rgba(0,0,0,0.9) 100%
+      ),
+      url("background1.jpg");
+  
+    background-image: -o-linear-gradient(top, 
+        rgba(0,0,0,0.9) 0%, 
+        rgba(0,0,0,0) 20%,
+        rgba(0,0,0,0) 80%,
+        rgba(0,0,0,0.9) 100%
+      ),
+      -o-linear-gradient(left, 
+        rgba(0,0,0,0.9) 0%, 
+        rgba(0,0,0,0) 20%,
+        rgba(0,0,0,0) 80%,
+        rgba(0,0,0,0.9) 100%
+      ),
+      url("background1.jpg");
+  
+    background-image: linear-gradient(top, 
+        rgba(0,0,0,0.9) 0%, 
+        rgba(0,0,0,0) 20%,
+        rgba(0,0,0,0) 80%,
+        rgba(0,0,0,0.9) 100%
+      ),
+      linear-gradient(left, 
+        rgba(0,0,0,0.9) 0%, 
+        rgba(0,0,0,0) 20%,
+        rgba(0,0,0,0) 80%,
+        rgba(0,0,0,0.9) 100%
+      ),
+      url("background1.jpg");
+  }
+  .home .max-width{
+      margin: auto 0 auto 40px;
+  }
+  .home .home-content .text-1{
+      font-size: 27px;
+
+  }
+  .home .home-content .text-2{
+    font-size: 75px;
+    font-weight: 600;
+    margin-left: -3px;
+}
+.home .home-content .text-3{
+    font-size: 40px;
+}
+.home .home-content .text-3 span{
+    font-size: 55px;
+    color: yellow;
+}
+
+
+
+/* menu button styling */
+.menu-btn{
+    color: white;
+    font-size: 24px;
+    transition: color 0.3s ease;
+    cursor: pointer;
+    display: none;
+
+}
+.menu-btn:hover{
+    color: yellow;
+}
+
+/* all similar styled content */
+section .title{
+    position: relative;
+    font-size: 45px;
+    font-weight: 500;
+    margin-bottom: 60px;
+    padding-bottom: 20px;
+    text-align: center;
+    font-family: "Ubuntu", "sans serif";
+}
+
+section .title::before{
+    content: "";
+    position: absolute;
+    width: 180px;
+    left: 50%;
+    height: 3px;
+    background: #111;
+    bottom: 0px;
+    transform: translateX(-50%);
+
+
+}
+section .title::after{
+    position: absolute;
+    left: 50%;
+    color: rgb(0, 34, 85);
+    font-size: 24px;
+    padding: 5px;
+
+    background: #fff;
+    bottom: -12px;
+    transform: translateX(-50%);
+
+
+}
+
+/* about section */
+section{
+    padding: 100px 0;
+}
+.about , .services, .projects, .contact, footer{
+    font-family: "Poppins", "sans serif";
+
+}
+
+.about .title::after{
+    content: "And QAS";
+    font-size: 19px;
+
+}
+.about-content .left img{
+    width: 500px;
+    height: 500px;
+    object-fit: cover;
+}
+
+
+.about .about-content, .services .serv-content, .contact .contact-content{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+.about .about-content .left{
+    width: 45%;
+    
+}
+
+.about .about-content .right{
+    width: 55%;
+}
+.about .about-content .right .text{
+    font-size: 22px ;
+    font-weight: 500;
+    margin-bottom: 60px;
+}
+
+.about .about-content .right .text span{
+    font-size: 28px ;
+    font-weight: 600;
+    color: rgb(255, 255, 4);
+    -webkit-text-stroke: 1px black;    
+}
+.about .about-content .right .text .p{
+    text-align: justify;
+}
+.about .about-content .right a{
+    display: inline-block;
+    background: rgb(0, 34, 85);
+    color: white;
+    font-size: 25px;
+    padding: 1px 30px;
+    margin-top: 20px;
+    border-radius: 6px;
+    border: 2px solid black;
+    transition: all 0.3s ease;
+    font-weight: 600;
+
+}
+
+.about .about-content .right a:hover{
+    color: rgb(0, 34, 85);
+    background: none;
+    font-weight: 600;
+
+}
+
+
+
+/* services section styling */
+
+.services{
+    color: #fff;
+    background: rgb(0, 24, 61) ;
+    
+
+}
+.services .title::before{
+    background: white;
+}
+.services .serv-content .card{
+    width: calc(33% - 70px);
+    height: 200px;
+    text-align: center;
+    background: rgb(0, 34, 85);
+    border-radius: 6px;
+    padding: 20px 25px;
+    cursor: pointer;
+}
+
+.services .serv-content .card .box{
+    transition: all 0.3s ease;
+    
+
+}
+
+.services .serv-content .card:hover{
+    background: rgb(12, 40, 82);
+} 
+
+.services .serv-content .card:hover .box{
+    transform: scale(1.05);
+}
+
+.services .serv-content .img{
+    margin: 5px;
+} 
+
+
+.services .serv-content .card i{
+    font-size: 60px;
+    color: #fff;
+}
+.services .serv-content .card .text{
+    font-size: 24px;
+    font-weight: 500;
+    color: yellow;
+}
+
+
+
+/* Project section styling */
+
+
+
+
+
+.projects{
+    color: #fff;
+    background: rgb(0, 15, 36);
+    border-top: 10px solid black;
+    border-bottom:10px solid black;
+
+}
+.projects .carousel .box img{
+    height: 250px;
+    width: 380px;
+    object-fit:cover;
+    border-radius: 10%;
+}
+.projects .carousel .box img:hover{
+    border: 6px solid yellow;
+    transition: all 0.3s ease;
+    transform: scale(1.05);
+}
+
+.projects .carousel .box{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-left: 12px !important;
+    margin-right: 12px !important;
+    text-align: center;
+    background: black;
+
+}
+.projects .carousel .box .text{
+    margin: 10px 0 7px 0;
+    font-size: 25px;
+    font-weight: 500;
+}
+.projects .title::after{
+    content: "Python & R Studio";
+    font-size: 19px;
+    background: black;
+    color: #fff;
+}
+
+.projects .title::before{
+    background: white;
+}
+.projects .carousel .card{
+    border-radius: 10px;
+    padding: 20px 25px;
+    cursor: pointer;
+    text-align: center;
+    transition: all 0.3s ease;
+}
+
+.projects .carousel .card:hover{
+    border-radius: 6px;
+    padding: 20px 25px;
+    cursor: pointer;
+}
+
+
+.owl-dots{
+    text-align: center;
+    margin-top: 20px;
+
+}
+.owl-dot{
+    margin: 0 3px ;
+    height: 15px;
+    width: 15px;
+    outline: none!important;
+    border-radius: 50%;
+    border: 3px solid yellow!important;
+    transition: all 0.3s ease;
+
+}
+.owl-dot.active{
+    width: 21px;
+    height: 21px;
+}
+
+.owl-dot.active, .owl-dot:hover{
+    background: yellow!important;
+}
+
+
+
+
+
+
+/* contact section styling */
+.contact .contact-content .column{
+    width: calc(50% - 30px);
+
+}
+
+.contact .contact-content .text{
+    font-size: 25px;
+    font-weight:500;
+    margin-bottom: 10px;
+}
+
+
+.contact .contact-content .left p{
+    text-align: justify;
+
+}
+
+.contact .contact-content .left .icons{
+    margin: 5px 0;
+
+}
+
+.contact .contact-content .row{
+    display: flex;
+    height: 70px;
+    align-items: center;
+    margin: 35px;
+    
+   
+}
+
+.contact .contact-content .row .info{
+    margin: 30px;
+}
+
+.contact .contact-content i{
+    font-size: 25px;
+
+}
+
+.contact .contact-content  .info .head{
+    margin-bottom: 10px;
+    margin-top: 20px ;
+    font-weight: 500;
+    
+
+}
+.contact .contact-content  .info .sub-title{
+    color: #222;
+
+}
+
+.contact .right form .fields{
+    display: flex;
+
+
+}
+.contact .right form .field, 
+.contact .right form .fields .field{
+    width: 100%;
+    height: 100%;
+}
+
+
+.contact .right form  .name, .contact .right form  .email, .contact .right form  .sub{
+    margin-bottom: 10px;
+}
+.contact .right form .field .email{
+    margin-right: 10px;
+}
+
+.contact .right form .field input, .contact .right form .field textarea{
+    height: 100%;
+    width: 100%;
+    border: 1px solid darkgrey;
+    border-radius: 6px;
+    outline: none;
+    padding: 5px 5px 5px 5px;
+    font-size: 17px;
+    font-family: "Poppins", "sans serif";
+}
+
+.contact .right form .button button{
+    width: 100%;
+    height: 100%;
+    font-size: 20px;
+    font-family: "Poppins", "sans serif";
+    cursor: pointer;
+
+}
+
+
+
+
+/* end navigation */
+.end-nav{
+    background: rgb(0, 34, 85);
+    border-top: 1px solid black;
+}
+
+
+footer {
+    background: rgb(0, 34, 85); 
+    color: white;
+    padding: 20px;
+}
+
+
+
+
+
+/* responsive media queries */
+@media(max-width:1300px){
+    .home .max-width{
+        margin-left: 0px;
+    }
+    .projects .carousel .box img{
+        height: 200px;
+        width: 330px;
+        object-fit:cover;
+        border-radius: 10%;
+    }
+
+}
+@media(max-width:1286px){
+    .about-content .left img{
+        width: 450px;
+        height: 450px;
+        object-fit: cover;
+    }
+    .services .serv-content .card{
+        width: calc(45% - 5px);
+        margin-bottom: 20px;
+       
+    }
+}
+
+
+@media(max-width:1162px){
+    .max-width{padding: 0 50px;
+    }
+    .menu-btn{
+        display: block;
+        z-index: 999;
+    
+    }
+    .contact .contact-content .left .text{
+        font-size: 15px;
+        padding-top: 20px!important;
+    }
+    .services .serv-content .card{
+        width: 100%;
+        margin-bottom: 20px;
+       
+    }
+    .navbar .menu{
+        position: fixed;
+        background: #111;
+        height: 100vh;
+        width: 100%;
+        left: -100%;
+        top: 0;
+        text-align: center;
+        padding-top: 80px;
+        transition: all 0.3s ease;
+
+    }
+
+    .menu-btn i.active:before{
+        content: "\f00d";
+    }
+    .navbar .menu.active{
+        left: 0;
+    }
+    
+    .navbar .menu li{
+        display: block;
+
+    }
+    .navbar .menu li a{
+        display: inline-block;
+        margin: 20px 0;
+        font-size: 25px;
+    }
+    .max-width{
+        max-width: 800px;
+    }
+    .about .about-content .column{
+        width: 50%;
+    }
+    .about .about-content .left{
+        display: flex;
+        justify-content: center;
+        margin: 0 auto 60px;
+    }
+    .about .about-content .right{
+        flex: 100%;
+        justify-content: center;
+        margin: 0 auto 60px;
+    }
+
+    .contact .contact-content .column{
+        width: 100%;
+        margin-bottom: 35px;
+    }
+   
+}
+
+
+
+@media(max-width:690px){
+    .max-width{padding: 0 30px;
+    }
+    .home .home-content .text-1{
+        font-size: 27px;
+  
+    }
+    .home .home-content .text-2{
+      font-size: 65px;
+      font-weight: 600;
+      margin-left: -3px;
+  }
+  .home .home-content .text-3{
+      font-size: 30px;
+  }
+  .home .home-content .text-3 span{
+      font-size: 45px;
+      color: yellow;
+  }
+}
+@media(max-width:500px){
+    .max-width{padding: 0 20px;
+    }
+    .home .home-content .text-1{
+        font-size: 20px;
+  
+    }
+    .home .home-content .text-2{
+      font-size: 55px;
+      font-weight: 600;
+      margin-left: -3px;
+  }
+    .home .home-content .text-3{
+        font-size: 20px;
+    }
+    .home .home-content .text-3 span{
+        font-size: 35px;
+        color: yellow;
+    }
+}

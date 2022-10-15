@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="Style.css">
+    <title>Personal Portfolio Website</title>
+    <script src="https://kit.fontawesome.com/b0e52b451e.js" crossorigin="anonymous"></script>    
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"> </script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/waypoints/4.0.1/jquery.waypoints.min.js" ></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/typed.js/2.0.12/typed.min.js" ></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js" ></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css"/>
+
+
+
+</head>
+<div class="scroll-up-btn">
+    <i class="fas fa-angle-up"></i>
+</div>
+<body>
+    <nav class= "navbar">
+        <div class="max-width">
+            <div class="logo"><a href="#"> Quantitative Advisory <span>EY</span></a> </div>
+            <ul class="menu">
+                <li><a href="#home" class='menu-btn'>Home</a></li>
+                <li><a href="#about" class='menu-btn'>About</a></li>
+                <li><a href="#services" class='menu-btn'>Services</a></li>
+                <li><a href="#project" class='menu-btn'>Projects</a></li>
+                <li><a href="#contact" class='menu-btn'>Contact</a></li>
+            </ul>
+            <div class="menu-btn">
+                <i class="fa fa-bars"></i>          
+              </div>
+        </div>
+        
+    </nav>
+    <!-- home section start  -->
+    <section class="home" id="home">
+        <div class="max-width">
+            <div class="home-content">
+                <div class="text-1"> <span class="typing"></span></div>
+                <div class="text-2">Anthony Carr</div>
+                <div class="text-3">  I am a <span>Data Analyst</span>.</div>
+            </div>
+            
+        </div>
+    </section>
+    <!-- about section start -->
+    <section class="about" id="about">
+        <div class="max-width">
+            <h2 class="title">About Me</h2>
+            <div class="about-content">
+                <div class="column left">
+                <img src="New Attempt/me_pt2.jpg" alt="Me">
+                </div>
+                <div class="column right">
+                    <div class="text">I'm Anthony and I work for the Quanititative Adivsory Services (QAS) Practice here at <span class="one">Ernst and Young. </span><br><br> 
+                        <p>  In QAS we work with projects involving counterparty risk, enterprise risk, and derivative valuation. 
+                        While our main focus is delivering quality risk assesment models, we also are expanding our capabilities - including the most up-to-date modeling techniques
+                        such as Neural Networks, Gradient Boosted Trees, and Markov Chains. 
+                        </p>
+                    </div>
+                    <a href="New Attempt/Anthony_Carr_Website_Resume.pdf">Download CV</a>
+                 </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- services section start -->
+    <section class="services" id="services">
+        <div class="max-width">
+            <h2 class="title">Engagements</h2>
+            <div class="serv-content">
+
+                <div class="card">
+                    <div class="box">
+                        <i class="fa fa-money"></i>
+                        <div class="text">Risk Modeling</div>
+                        <p>Credit risk and risk of default are the primary models run and backtested. Outcomes include bivariate outcomes and sigmoid probability values.</p>
+                    </div>
+                </div>
+
+
+
+                <div class="card">
+                    <div class="box">
+                        <i class="fa fa-pie-chart"></i>
+                        <div class="text">Limit Setting</div>
+                        <p>Proposed new limit setting requirements for Business-as-Usual Operations for a top 10 Global bank</p>
+                    </div>
+                </div>
+
+                
+                
+                <div class="card">   
+                    <div class="box">
+                        <i class="fa fa-university"></i>
+                        <div class="text">Model Governance</div>
+                        <p> Documented measurement procedures for risk metrics such as PFE, CCR Stress Testing, and Settlement risk for BAU operations.</p>
+                    </div>
+                </div>
+            </div>  
+               
+        </div>
+    </section>
+    <!-- Project section start -->
+    <section class="projects" id="project">
+        <div class="max-width">
+            <h2 class="title">My Projects</h2>
+            <div class="carousel owl-carousel">
+                <div class="card">
+                    <div class="box">
+                        <img src="New Attempt/MC.png" alt="Monte Carlo">
+                        <div class="text">Monte Carlo Simulation for Valuation</div>
+                        <p>Simulated a stock portfolio in Python, based on a Moving Average Cholesky Decomposition of 1000 simulations.</p>
+                    </div>
+                </div>
+
+                <div class="card">
+                    <div class="box">
+                        <img src="New Attempt/newplot.png" alt="EFFF">
+                        <div class="text">Efficient Frontier</div>
+                        <p>Used Python to optimize weights of a discrete number of stocks. Utilized SciPy, NumPy, and Pandas</p>
+                    </div>
+                </div>
+
+                <div class="card">
+                    <div class="box">
+                        <img src="New Attempt/neural_net.png" alt="Neural Network">
+                        <div class="text">Neural Network for Sentiment Analysis</div>
+                        <p>This is a working project. News sites are to be webscraped and classified as positive or negative. The neural model will then index the top used words to predict overall sentiment.</p>
+                    </div>
+                </div>
+
+                <div class="card">
+                    <div class="box">
+                        <img src="New Attempt/Forex.png" alt="Forex">
+                        <div class="text">Foreign Exchange Predictions </div>
+                        <p>Ordinary Least Squares loss function was used to forecast Peso/USD value.</p>
+                    </div>
+                </div>
+                
+                <div class="card">
+                    <div class="box">
+                        <img src="New Attempt/IRF.png" alt="VECM">
+                        <div class="text">Impulse Response Functions from VECM</div>
+                        <p>Tested the number of required lags for the predictors of US CPI to test impulses from each factor.</p>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- contact section html -->
+
+    <section class="contact" id="contact">
+        <div class="max-width">
+            <h2 class="title">Contact Me</h2>
+            <div class="contact-content">
+                <div class="column left">
+                    <div class="text">Get in Touch</div>
+                    <p>Hey! I'd love to hear feedback on the website or even hear from potential clients. Feel free to drop me a line.
+                        <br><br> - Anthony
+                    </p>
+                    
+                </div>
+                <div class="column right">
+                    <form action="mailto:carrac@gwu.edu" method="POST">
+
+                        <div class="button">
+                            <button type="Submit">Send Message</button>
+                        </div>
+                       
+                    </form>
+                    
+                </div>
+
+            </div>
+                
+
+        </div>
+    </section>
+
+    <footer>
+        <span> Created by Anthony Carr | <span class="far fa-copyright"></span> 2022 All Rights Reserved</span>
+    </footer>
+
+    <script src="script.js"> </script>
+</body>
+</html>
