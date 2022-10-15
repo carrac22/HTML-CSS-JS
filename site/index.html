@@ -169,7 +169,7 @@
                 </div>
                 <div class="column right">
                     <form action="mailto:carrac@gwu.edu" method="POST">
-
+                        {% csrf_token %}
                         <div class="button">
                             <button type="Submit">Send Message</button>
                         </div>
