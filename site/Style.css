@@ -404,7 +404,6 @@ section{
     margin-left: 12px !important;
     margin-right: 12px !important;
     text-align: center;
-    background: black;
 
 }
 .projects .carousel .box .text{
@@ -415,7 +414,6 @@ section{
 .projects .title::after{
     content: "Python & R Studio";
     font-size: 19px;
-    background: black;
     color: #fff;
 }
 
