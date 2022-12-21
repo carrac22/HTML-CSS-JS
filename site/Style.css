@@ -652,6 +652,10 @@ footer {
         width: 100%;
         margin-bottom: 35px;
     }
+
+    .projects .carousel {
+        gap: 5px;
+    }
    
 }
 
@@ -696,4 +700,12 @@ footer {
         font-size: 35px;
         color: yellow;
     }
+}
+@media(max-width:450px){
+
+.about-content img{
+width: 100vw;
+
+}
+
 }
