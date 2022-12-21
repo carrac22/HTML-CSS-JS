@@ -580,7 +580,7 @@ footer {
 }
 @media(max-width:1286px){
     .about-content .left img{
-        width: 100%;
+        width: 100vw;
         object-fit: cover;
     }
     .services .serv-content .card{
