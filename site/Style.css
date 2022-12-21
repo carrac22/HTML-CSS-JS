@@ -555,7 +555,14 @@ footer {
 }
 
 
+@media(max-width:450px){
 
+    .about-content img{
+    width: 100vw;
+    
+    }
+    
+    }
 
 
 /* responsive media queries */
@@ -700,12 +707,4 @@ footer {
         font-size: 35px;
         color: yellow;
     }
-}
-@media(max-width:450px){
-
-.about-content img{
-width: 100vw;
-
-}
-
 }
