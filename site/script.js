@@ -46,14 +46,14 @@ $(document).ready(function(){
                 nav: false
             },
             800:{
-                items: 1,
-                nav:false
-            },
-            1000:{
                 items: 2,
                 nav:false
             },
-            1200:{
+            1300:{
+                items: 2,
+                nav:false
+            },
+            1500:{
                 items: 3,
                 nav: false
             }
