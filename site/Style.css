@@ -539,6 +539,13 @@ footer {
 
 }
 @media(max-width:1286px){
+    .about .about-content .right{
+        margin-left: auto;
+        margin-right: auto;
+        text-align: center;
+    }
+
+
     .about-content .left img{
         width: 100vw;
         object-fit: cover;
@@ -565,6 +572,7 @@ footer {
         margin-bottom: 20px;
        
     }
+    
     .navbar .menu{
         position: fixed;
         background: #111;
@@ -595,7 +603,7 @@ footer {
         font-size: 25px;
     }
     .max-width{
-        max-width: 800px;
+        max-width: 1000px;
     }
     .about .about-content .column{
         width: 50%;
@@ -624,6 +632,16 @@ footer {
     }
     .projects .carousel {
         gap:5px;
+    }
+
+    .services .serv-content .card{
+        width: 70%;
+        margin-left: auto;
+        margin-right: auto;
+
+    }
+    .services .serv-content .card{
+        margin-bottom: 40px;
     }
    
 }
