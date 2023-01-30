@@ -588,10 +588,7 @@ footer {
         margin-bottom: 20px;
        
     }
-}
 
-
-@media(max-width:1162px){
     .max-width{padding: 0 50px;
     }
     .menu-btn{
@@ -659,8 +656,14 @@ footer {
         margin-bottom: 35px;
     }
 
+
+    .progects .card img{
+        margin-left: 20px;
+        margin-right: 20px;
+        overflow: hidden;
+    }
     .projects .carousel {
-        gap: 5px;
+        gap:5px;
     }
    
 }
