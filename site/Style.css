@@ -466,55 +466,11 @@ section{
 
 
 /* contact section styling */
-.contact .contact-content .column{
-    width: calc(50% - 30px);
-
-}
-
-.contact .contact-content .text{
-    font-size: 25px;
-    font-weight:500;
-    margin-bottom: 10px;
-}
-
-
-.contact .contact-content .left p{
-    text-align: justify;
-
-}
-
-.contact .contact-content .left .icons{
-    margin: 5px 0;
-
-}
-
-.contact .contact-content .row{
-    display: flex;
-    height: 70px;
-    align-items: center;
-    margin: 35px;
-    
-   
-}
-
-.contact .contact-content .row .info{
-    margin: 30px;
-}
-
-.contact .contact-content i{
-    font-size: 25px;
-
-}
-
-.contact .contact-content  .info .head{
-    margin-bottom: 10px;
-    margin-top: 20px ;
-    font-weight: 500;
-    
-
-}
-.contact .contact-content  .info .sub-title{
-    color: #222;
+.contact .contact-content{
+    width: 60%;
+    margin-right: auto;
+    margin-left: auto;
+    text-align: center;
 
 }
 
@@ -522,9 +478,12 @@ section{
 
 
 
-.contact .right {
+.contact .column {
     height: 100%;
-    width: 100%;
+    transform: scale(1.3);
+    margin-right: auto;
+    margin-left: auto;
+    width: 50%;
     background: rgb(22, 1, 162);
     color: white;
     border-radius: 6px;
@@ -535,7 +494,8 @@ section{
     text-align: center;
 }
 
-.contact .right .happy{
+.contact .column a{
+    vertical-align: middle;
     color: white;
 }
 
